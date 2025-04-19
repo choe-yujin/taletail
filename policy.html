@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy - TaleTail Project</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #FFF9E0; }
+    .lang-btn {
+      background: #FFF7D1;
+      color: #444;
+      border: none;
+      border-radius: 8px;
+      padding: 0.4rem 1.2rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.2s, color 0.2s;
+      cursor: pointer;
+      outline: none;
+    }
+    .lang-btn.active {
+      background: #FFD600;
+      color: #333;
+    }
+    .lang-btn:not(.active):hover, .lang-btn:not(.active):focus {
+      background: #FFE58F;
+      color: #222;
+    }
+    #policy-title { color: #FFD600 !important; }
+  </style>
+</head>
+<body>
+  <div class="absolute top-4 right-4 flex gap-2 z-10">
+    <button class="lang-btn active" data-lang="ko">한국어</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="pt">PT</button>
+    <button class="lang-btn" data-lang="tet">Tetum</button>
+  </div>
+  <main class="container mx-auto mt-16 px-5 flex flex-col">
+    <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 mb-12">
+      <h1 id="policy-title" class="text-3xl font-bold mb-4">개인정보처리방침</h1>
+      <div id="policy-content" class="text-gray-700 space-y-6"></div>
+      <div class="mt-8 text-center">
+        <a href="index.html" class="text-yellow-700 underline">← 메인으로 돌아가기 / Back to Main</a>
+      </div>
+    </div>
+  </main>
+  <footer class="mt-8 py-4 text-center text-gray-500 text-sm">
+    <div>
+      <strong>Customer Service:</strong> <a href="tel:+821040624136" class="underline">+82-10-4062-4136</a>
+      &nbsp;|&nbsp;
+      <strong>Email:</strong> <a href="mailto:dev.yujinchoe@gmail.com" class="underline">dev.yujinchoe@gmail.com</a>
+      &nbsp;|&nbsp;
+      <strong>GitHub:</strong> <a href="https://github.com/choe-yujin/android-kids-story-app" class="underline" target="_blank">github.com/choe-yujin/android-kids-story-app</a>
+    </div>
+    <div class="mt-2">
+      © 2025 TaleTail Project. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    const policy = {
+      ko: {
+        title: "개인정보처리방침",
+        content: `
+<p><strong>최종 업데이트: 2025년 4월 19일</strong></p>
+<p>
+본 개인정보처리방침은 TaleTail Project(이하 ‘앱’)이 개인정보를 어떻게 수집, 이용, 보호하는지 설명합니다. 본 앱은 만 13세 미만 어린이를 포함한 모든 사용자를 위해 설계되었으며, 아동의 개인정보 보호를 위해 관련 법령을 준수합니다.
+</p>
+<h2 class="font-bold mt-4 mb-2">1. 수집하는 정보</h2>
+<ul class="list-disc pl-6">
+  <li>앱은 만 13세 미만 아동의 개인정보를 부모 동의 없이 수집하지 않습니다. 만약 아동이 부모 동의 없이 개인정보를 제공한 경우, 즉시 삭제합니다.</li>
+  <li>앱은 사용자 등록, 로그인, 쿠키 사용, 행동 추적, 사용자 데이터 저장을 하지 않습니다.</li>
+  <li>앱은 서비스 개선을 위한 비개인정보(이용 기록 등)만 익명으로 수집할 수 있습니다.</li>
+</ul>
+<h2 class="font-bold mt-4 mb-2">2. 개인정보 수집 목적</h2>
+<ul class="list-disc pl-6">
+  <li>앱 기능 제공 및 개선</li>
+  <li>사용자 지원 및 피드백 관리</li>
+</ul>
+<h2 class="font-bold mt-4 mb-2">3. 개인정보 보유 및 이용기간</h2>
+<p>개인정보는 목적 달성 시 즉시 파기되며, 이용자의 요청이 있을 경우 언제든 삭제됩니다.</p>
+<h2 class="font-bold mt-4 mb-2">4. 제3자 제공</h2>
+<p>법령에 특별한 규정이 있는 경우를 제외하고, 개인정보를 제3자에게 제공하지 않습니다.</p>
+<h2 class="font-bold mt-4 mb-2">5. 아동의 개인정보 보호</h2>
+<ul class="list-disc pl-6">
+  <li>만 13세 미만 아동의 개인정보를 수집하지 않으며, 부모가 언제든 자녀의 개인정보 열람, 수정, 삭제를 요청할 수 있습니다.</li>
+</ul>
+<h2 class="font-bold mt-4 mb-2">6. 데이터 보안</h2>
+<p>앱은 개인정보 보호를 위해 합리적인 기술적·관리적 조치를 시행합니다. 인터넷을 통한 데이터 전송은 100% 안전을 보장할 수 없으며, 개인정보는 동의 후에만 처리됩니다.</p>
+<h2 class="font-bold mt-4 mb-2">7. 정책 변경</h2>
+<p>법령 또는 서비스 변경에 따라 본 방침이 수정될 수 있으며, 중요한 변경 시 공지 및 최신 날짜를 갱신합니다.</p>
+<h2 class="font-bold mt-4 mb-2">8. 문의</h2>
+<p>
+문의사항이 있으시면 언제든 아래로 연락해 주세요.<br>
+이메일: <a href="mailto:dev.yujinchoe@gmail.com" class="underline">dev.yujinchoe@gmail.com</a><br>
+전화: <a href="tel:+821040624136" class="underline">+82-10-4062-4136</a>
+</p>
+        `
+      },
+      en: {
+        title: "Privacy Policy",
+        content: `
+<p><strong>Last Updated: April 19, 2025</strong></p>
+<p>
+This Privacy Policy explains how TaleTail Project ("the App") collects, uses, and protects personal information. The App is intended for users including children under the age of 13, and we are committed to protecting children's privacy in compliance with applicable laws and regulations.
+</p>
+<h2 class="font-bold mt-4 mb-2">1. Information We Collect</h2>
+<ul class="list-disc pl-6">
+  <li>The App does not collect personal information from children under 13 without parental consent. If a child provides personal information without parental consent, we will promptly delete it.</li>
+  <li>The App does not require user registration or login, does not use cookies, does not track user behavior, and does not store user data.</li>
+  <li>Non-personal information (such as anonymous usage data) may be collected for the purpose of improving the App.</li>
+</ul>
+<h2 class="font-bold mt-4 mb-2">2. Purpose of Collecting Personal Information</h2>
+<ul class="list-disc pl-6">
+  <li>To provide and improve app functionality</li>
+  <li>To provide user support and manage feedback</li>
+</ul>
+<h2 class="font-bold mt-4 mb-2">3. Retention and Deletion</h2>
+<p>Personal information is deleted immediately after the purpose is fulfilled or upon user request.</p>
+<h2 class="font-bold mt-4 mb-2">4. Sharing with Third Parties</h2>
+<p>Personal information is not shared with third parties unless required by law.</p>
+<h2 class="font-bold mt-4 mb-2">5. Children's Privacy</h2>
+<ul class="list-disc pl-6">
+  <li>We do not collect personal information from children under 13 without verifiable parental consent. Parents can review, modify, or delete their child's personal information at any time.</li>
+</ul>
+<h2 class="font-bold mt-4 mb-2">6. Data Security</h2>
+<p>We implement reasonable technical and organizational measures to protect user data. No method of data transmission is 100% secure, and any processing of personal information is done only with user consent.</p>
+<h2 class="font-bold mt-4 mb-2">7. Changes to the Policy</h2>
+<p>This policy may be updated to reflect changes in the law or our practices. Significant changes will be notified and the "Last Updated" date will be revised.</p>
+<h2 class="font-bold mt-4 mb-2">8. Contact</h2>
+<p>
+If you have any questions, please contact us:<br>
+Email: <a href="mailto:dev.yujinchoe@gmail.com" class="underline">dev.yujinchoe@gmail.com</a><br>
+Phone: <a href="tel:+821040624136" class="underline">+82-10-4062-4136</a>
+</p>
+        `
+      },
+      pt: {
+        title: "Política de Privacidade",
+        content: `
+<p><strong>Última atualização: 19 de abril de 2025</strong></p>
+<p>
+Esta Política de Privacidade explica como o TaleTail Project ("o App") coleta, usa e protege informações pessoais. O App é destinado a usuários, inclusive crianças menores de 13 anos, e estamos comprometidos em proteger a privacidade das crianças em conformidade com as leis aplicáveis.
+</p>
+<h2 class="font-bold mt-4 mb-2">1. Informações que coletamos</h2>
+<ul class="list-disc pl-6">
+  <li>O App não coleta informações pessoais de crianças menores de 13 anos sem o consentimento dos pais. Se uma criança fornecer informações pessoais sem consentimento dos pais, iremos excluí-las imediatamente.</li>
+  <li>O App não exige cadastro, login, não utiliza cookies, não rastreia o comportamento do usuário e não armazena dados do usuário.</li>
+  <li>Informações não pessoais (como dados de uso anônimos) podem ser coletadas para melhorar o App.</li>
+</ul>
+<h2 class="font-bold mt-4 mb-2">2. Finalidade da coleta</h2>
+<ul class="list-disc pl-6">
+  <li>Fornecer e melhorar as funcionalidades do aplicativo</li>
+  <li>Oferecer suporte ao usuário e gerenciar feedback</li>
+</ul>
+<h2 class="font-bold mt-4 mb-2">3. Retenção e exclusão</h2>
+<p>As informações pessoais são excluídas imediatamente após o cumprimento do objetivo ou mediante solicitação do usuário.</p>
+<h2 class="font-bold mt-4 mb-2">4. Compartilhamento com terceiros</h2>
+<p>As informações pessoais não são compartilhadas com terceiros, exceto quando exigido por lei.</p>
+<h2 class="font-bold mt-4 mb-2">5. Privacidade das crianças</h2>
+<ul class="list-disc pl-6">
+  <li>Não coletamos informações pessoais de crianças menores de 13 anos sem consentimento verificável dos pais. Os pais podem revisar, modificar ou excluir as informações pessoais de seus filhos a qualquer momento.</li>
+</ul>
+<h2 class="font-bold mt-4 mb-2">6. Segurança dos dados</h2>
+<p>Implementamos medidas técnicas e organizacionais razoáveis para proteger os dados dos usuários. Nenhum método de transmissão de dados é 100% seguro, e qualquer processamento de informações pessoais é feito apenas com o consentimento do usuário.</p>
+<h2 class="font-bold mt-4 mb-2">7. Alterações na política</h2>
+<p>Esta política pode ser atualizada para refletir mudanças na legislação ou em nossas práticas. Mudanças significativas serão notificadas e a data de atualização será revisada.</p>
+<h2 class="font-bold mt-4 mb-2">8. Contato</h2>
+<p>
+Se você tiver dúvidas, entre em contato:<br>
+Email: <a href="mailto:dev.yujinchoe@gmail.com" class="underline">dev.yujinchoe@gmail.com</a><br>
+Telefone: <a href="tel:+821040624136" class="underline">+82-10-4062-4136</a>
+</p>
+        `
+      },
+      tet: {
+        title: "Politika Privasidade",
+        content: `
+<p><strong>Data Atualizasaun: 19 Abril 2025</strong></p>
+<p>
+Politika Privasidade ne’e esplika oinsa TaleTail Project (“Aplikasaun”) kolekta, uza no proteje informasaun privadu. Aplikasaun ne’e destina ba uza-na’in sira inklui labarik iha okos tinan 13, no ami compromete atu proteje privasidade labarik sira tuir lei relevante.
+</p>
+<h2 class="font-bold mt-4 mb-2">1. Informasaun ne’ebé ami kolekta</h2>
+<ul class="list-disc pl-6">
+  <li>Aplikasaun la kolekta informasaun privadu husi labarik iha okos tinan 13 tanba la iha konsentu husi inan-aman. Se labarik fornese informasaun privadu tanba la iha konsentu, ami sei hamos hela.</li>
+  <li>Aplikasaun la presiza uza-nain rejistu ka login, la uza cookies, la haree komportamentu uza-nain, no la rai dadus uza-nain.</li>
+  <li>Dadus la privadu (hanesan dadus uza-nain anónimu) bele kolekta hodi hadia aplikasaun.</li>
+</ul>
+<h2 class="font-bold mt-4 mb-2">2. Objetivu kolekta informasaun</h2>
+<ul class="list-disc pl-6">
+  <li>Hodi fornese no hadia funsaun aplikasaun</li>
+  <li>Hodi fo suporta ba uza-nain no gestiona feedback</li>
+</ul>
+<h2 class="font-bold mt-4 mb-2">3. Rai no hamos informasaun</h2>
+<p>Informasaun privadu sei hamos hela depois objetivu kompleta ka tuir pedidu uza-nain.</p>
+<h2 class="font-bold mt-4 mb-2">4. Partilha ho parte-tolu</h2>
+<p>Informasaun privadu la partilha ho parte-tolu, laos obrigatoriu tuir lei.</p>
+<h2 class="font-bold mt-4 mb-2">5. Privasidade labarik sira</h2>
+<ul class="list-disc pl-6">
+  <li>Ami la kolekta informasaun privadu husi labarik iha okos tinan 13 laos ho konsentu verifikavel husi inan-aman. Inan-aman bele haree, muda, ka hamos informasaun privadu labarik sira iha tempu ruma.</li>
+</ul>
+<h2 class="font-bold mt-4 mb-2">6. Seguransa dadus</h2>
+<p>Ami implementa medidu tekniku no organizasional hodi proteje dadus uza-nain. Metodu transmisasaun dadus la 100% seguru, no prosesamentu informasaun privadu halo deit ho konsentu uza-nain.</p>
+<h2 class="font-bold mt-4 mb-2">7. Mudansa politika</h2>
+<p>Politika ne’e bele muda tuir mudansa lei ka pratika ami. Mudansa importante sei informa ba uza-nain no data atualizasaun sei muda.</p>
+<h2 class="font-bold mt-4 mb-2">8. Kontaktu</h2>
+<p>
+Se iha duvida, favór kontaktu ami:<br>
+Email: <a href="mailto:dev.yujinchoe@gmail.com" class="underline">dev.yujinchoe@gmail.com</a><br>
+Telefone: <a href="tel:+821040624136" class="underline">+82-10-4062-4136</a>
+</p>
+        `
+      }
+    };
+    function setPolicyLang(lang) {
+      const p = policy[lang];
+      document.documentElement.lang = lang;
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+      document.getElementById('policy-title').textContent = p.title;
+      document.getElementById('policy-content').innerHTML = p.content;
+    }
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => setPolicyLang(btn.dataset.lang));
+    });
+    function getQueryLang() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('lang');
+    }
+    const urlLang = getQueryLang();
+    setPolicyLang(urlLang && ['ko','en','pt','tet'].includes(urlLang) ? urlLang : 'ko');
+  </script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>TaleTail</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="TaleTail - 언제 어디서나 무료로 읽는 동화책 앱. 동티모르 테툼어부터 다양한 언어로, 광고 없이 무료로 제공합니다.">
+  <link rel="icon" href="/icon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #FFF9E0; }
+    #app-title { color: #FFD600 !important; }
+    .lang-btn {
+      background: #FFF7D1;
+      color: #444;
+      border: none;
+      border-radius: 8px;
+      padding: 0.4rem 1.2rem;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: background-color 0.2s, color 0.2s;
+      cursor: pointer;
+      outline: none;
+    }
+    .lang-btn.active {
+      background: #FFD600;
+      color: #333;
+    }
+    .lang-btn:not(.active):hover, .lang-btn:not(.active):focus {
+      background: #FFE58F;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <!-- 언어 선택 -->
+  <div class="absolute top-4 right-4 flex gap-2 z-10">
+    <button class="lang-btn active" data-lang="ko">한국어</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="pt">PT</button>
+    <button class="lang-btn" data-lang="tet">Tetum</button>
+  </div>
+
+  <main class="container mx-auto mt-16 px-5 flex flex-col">
+    <!-- 앱 이름 및 주요 특징 -->
+    <div class="container mx-auto px-4 py-10">
+      <h1 id="app-title" class="text-center text-4xl lg:text-6xl font-bold mb-4">TaleTail</h1>
+      <p id="app-desc" class="text-gray-600 text-center text-xl mb-12">
+        언제 어디서나 무료로 읽는 동화책 앱
+      </p>
+      <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8 mb-12">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="text-4xl mb-4">🌏</div>
+            <h3 id="feature1-title" class="text-lg font-semibold mb-2">여러 언어 지원</h3>
+            <p id="feature1-desc" class="text-gray-600">테툼어, 한국어, 영어, 포르투갈어 등 다양한 언어로 동화책 제공</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl mb-4">🔊</div>
+            <h3 id="feature2-title" class="text-lg font-semibold mb-2">오디오북 & 오픈 저작권</h3>
+            <p id="feature2-desc" class="text-gray-600">안드로이드 TTS 오디오북, CC BY 4.0으로 자유롭게 활용 가능</p>
+          </div>
+          <div class="text-center">
+            <div class="text-4xl mb-4">🚫</div>
+            <h3 id="feature3-title" class="text-lg font-semibold mb-2">광고/결제 없음</h3>
+            <p id="feature3-desc" class="text-gray-600">지저분한 광고, 결제 유도 없이 평생 무료</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 앱 소개 -->
+    <div class="max-w-3xl mx-auto mt-12">
+      <div class="bg-white/80 backdrop-blur-sm shadow-xl rounded-lg overflow-hidden">
+        <div class="px-4 py-8 sm:p-6">
+          <h2 id="about-title" class="text-2xl font-bold text-gray-900 text-center mb-6">앱을 만든 이야기</h2>
+          <div id="about-content" class="space-y-6 text-gray-700 leading-relaxed">
+            <!-- 다국어 내용이 JS로 삽입됩니다 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-16 py-8 text-center text-gray-500 text-sm">
+    <div class="space-y-2">
+      <div>
+        <strong>Customer Service:</strong> <a href="tel:+821040624136" class="underline">+82-10-4062-4136</a>
+        &nbsp;|&nbsp;
+        <strong>Email:</strong> <a href="mailto:dev.yujinchoe@gmail.com" class="underline">dev.yujinchoe@gmail.com</a>
+        &nbsp;|&nbsp;
+        <strong>GitHub:</strong> <a href="https://github.com/choe-yujin/android-kids-story-app" class="underline" target="_blank">github.com/choe-yujin/android-kids-story-app</a>
+      </div>
+      <div>
+        <a id="footer-privacy-link" href="./policy.html?lang=ko" class="underline">개인정보처리방침</a>
+      </div>
+      <div class="mt-2">
+        © 2025 TaleTail Project. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script>
+    // 다국어 데이터
+    const contents = {
+      ko: {
+        appDesc: "언제 어디서나 무료로 읽는 동화책 앱",
+        feature1: ["여러 언어 지원", "테툼어, 한국어, 영어, 포르투갈어 등 다양한 언어로 동화책 제공"],
+        feature2: ["오디오북 & 오픈 저작권", "안드로이드 TTS 오디오북, CC BY 4.0으로 자유롭게 활용 가능"],
+        feature3: ["광고/결제 없음", "지저분한 광고, 결제 유도 없이 평생 무료"],
+        aboutTitle: "앱을 만든 이야기",
+        aboutContent: `
+        2024년에 동티모르에서 KOICA-NGO 봉사단으로 교육 봉사를 하던 중, 현지 아이들이 모국어로 된 동화책을 거의 접하지 못한다는 사실을 알게 되었어요. 아이들에게 독서의 즐거움을 선물하고 싶다는 마음에서 한국으로 돌아와 이 앱을 만들게 되었습니다.<br><br>
+        저와 디자이너 진성, 그리고 안드로이드 앱 개발자 재연, 이렇게 세 명이 힘을 모아 <strong>재능 기부로 완성한 어플이에요.</strong><br><br>
+        앱에 들어있는 동화책들은 (재)도서문화재단씨앗과 에누마가 만든 ‘두루책방’에서 오픈 저작권(CC BY 4.0)으로 제공해주신 소중한 자료를 바탕으로 만들었습니다. 저작자와 출처만 표시하면 누구나 자유롭게 복사, 수정, 재배포할 수 있는 책들이라 저도 동티모르 아이들을 위해 마음껏 활용할 수 있었어요.<br><br>
+        오디오북 기능은 안드로이드의 TTS 기능을 이용해 제공하고 있습니다. 다만, 테툼어는 아직 TTS 지원 언어에 포함되어 있지 않아서 오디오북이 지원되지 않아요. 혹시 테툼어로 직접 목소리를 녹음해주실 수 있다면, 음성 파일을 보내주세요! 여러분의 목소리로 동티모르 아이들에게 동화를 들려줄 수 있다면 정말 멋질 것 같아요.<br><br>
+        앞으로 테툼어뿐 아니라 여러 개발도상국의 언어로도 동화책을 확장해 나가고 싶어요. 번역 감수나 오디오북 녹음에 참여하고 싶으시거나, 앱에 대한 의견이 있으시면 언제든 연락주세요. 전 세계 어린이들에게 작은 도움이 될 수 있기를 진심으로 바랍니다.<br><br>
+        지저분한 광고나 결제 유도는 앞으로도 절대 없을 테니 안심하고 사용하셔도 됩니다. 더 좋은 앱이 될 수 있도록 여러분의 소중한 의견을 기다릴게요!
+        `,
+        privacy: "./policy.html?lang=ko",
+        privacyText: "개인정보처리방침"
+      },
+      en: {
+        appDesc: "A storybook app you can read for free, anytime, anywhere",
+        feature1: ["Multilingual Support", "Storybooks in Tetum, Korean, English, Portuguese and more"],
+        feature2: ["Audiobook & Open License", "Android TTS audiobooks, freely available under CC BY 4.0"],
+        feature3: ["No Ads or Payments", "Completely free, no ads or payment prompts"],
+        aboutTitle: "About the App",
+        aboutContent: `
+        In 2024, while volunteering in Timor-Leste with the KOICA-NGO, I realized that local children rarely had access to storybooks in their own language. Wanting to share the joy of reading, I returned to Korea and created this app.<br><br>
+        Together with designer Jinseong and Android developer Jaeyeon, the three of us made this app a reality through <strong>talent donation</strong>.<br><br>
+        The storybooks in the app are based on valuable resources from the ‘Dooroo Library’, created by The Foundation SeeArt for Book Culture and Enuma, Inc., and provided under an open CC BY 4.0 license. As long as you credit the author and source, anyone can freely copy, modify, and redistribute these books. Thanks to this, I was able to create storybooks for Timor-Leste children.<br><br>
+        The audiobook feature uses Android's TTS function. However, since Tetum is not yet supported by TTS, audiobooks are not available in Tetum. If you can record a Tetum voice, please send us your audio file! Wouldn't it be wonderful for Timor-Leste children to hear stories in your voice?<br><br>
+        We hope to expand to more developing countries' languages beyond Tetum. If you want to help with translation or audiobook recording, or if you have feedback, please contact us anytime. We sincerely hope this app helps children around the world.<br><br>
+        There will never be intrusive ads or payment prompts, so feel free to use the app. We welcome your feedback to make it even better!
+        `,
+        privacy: "./policy.html?lang=en",
+        privacyText: "Privacy Policy"
+      },
+      pt: {
+        appDesc: "Aplicativo de livros infantis grátis, para ler quando e onde quiser",
+        feature1: ["Suporte Multilíngue", "Livros em tétum, coreano, inglês, português e mais"],
+        feature2: ["Audiolivro & Licença Aberta", "Audiolivros com TTS Android, uso livre sob CC BY 4.0"],
+        feature3: ["Sem anúncios ou pagamentos", "Totalmente gratuito, sem anúncios ou cobranças"],
+        aboutTitle: "Sobre o aplicativo",
+        aboutContent: `
+        Em 2024, durante o voluntariado educacional em Timor-Leste com a KOICA-NGO, percebi que as crianças locais quase não tinham acesso a livros em sua língua materna. Com o desejo de compartilhar o prazer da leitura, voltei à Coreia e criei este aplicativo.<br><br>
+        Junto com o designer Jinseong e o desenvolvedor Android Jaeyeon, nós três tornamos este app realidade por meio de <strong>doação de talento</strong>.<br><br>
+        Os livros do app são baseados nos recursos da ‘Dooroo Library’, criada pela The Foundation SeeArt for Book Culture e Enuma, Inc., e fornecidos sob a licença aberta CC BY 4.0. Basta creditar o autor e a fonte para que qualquer pessoa possa copiar, modificar e redistribuir esses livros livremente. Assim, pude criar livros para as crianças de Timor-Leste.<br><br>
+        O recurso de audiolivro usa o TTS do Android. No entanto, como o tétum ainda não é suportado, não há audiolivros em tétum. Se você puder gravar uma voz em tétum, envie-nos o arquivo! Seria maravilhoso as crianças ouvirem histórias na sua voz.<br><br>
+        Queremos expandir para outros idiomas de países em desenvolvimento além do tétum. Se quiser ajudar com tradução, gravação ou enviar sugestões, entre em contato. Esperamos sinceramente ajudar crianças do mundo todo.<br><br>
+        Nunca haverá anúncios ou cobranças, então use à vontade. Suas opiniões são bem-vindas para melhorar ainda mais o app!
+        `,
+        privacy: "./policy.html?lang=pt",
+        privacyText: "Política de Privacidade"
+      },
+      tet: {
+        appDesc: "Aplikasaun livru istória livre atu lee iha ne'ebé-laran, tempu ruma, fatin ruma",
+        feature1: ["Apoiu Lian Barak", "Istória iha Tetum, Korean, English, Portuguese no barak liu tan"],
+        feature2: ["Audiolivru & Lisensa Livre", "Audiolivru ho TTS Android, uza livre ho CC BY 4.0"],
+        feature3: ["La iha Anúnsiu ka Pagamentu", "Kompletamente livre, la iha anúnsiu ka obrigasaun selu"],
+        aboutTitle: "Kona-ba aplikasaun",
+        aboutContent: `
+        Iha tinan 2024, wainhira halo voluntáriu edukasaun iha Timor-Leste ho KOICA-NGO, ha'u hatene katak labarik sira la bele hetan livru istória iha lian inan. Hakarak fo kontente ba lee, ha'u fila ba Korea no halo aplikasaun ida ne'e.<br><br>
+        Ha'u, designer Jinseong, no desenvolvedor Android Jaeyeon, hamutuk halo aplikasaun ne'e ho <strong>doasaun talento</strong>.<br><br>
+        Livru sira iha aplikasaun ne'e bazeia ba ‘Dooroo Library’, ne'ebe kria husi The Foundation SeeArt for Book Culture no Enuma, Inc., no fornese ho lisensa livre CC BY 4.0. Bainhira hatama autor no fonte, ema hotu-hotu bele kopia, hadia, no distribui livremente. Tan ne'e, ha'u bele halo livru ba labarik Timor-Leste.<br><br>
+        Funsaun audiolivru uza TTS husi Android. Maibé Tetum seidauk suporta, tan ne'e audiolivru Tetum seidauk iha. Se bele grava liafuan Tetum, favór ida haruka foun! Di'ak liu labarik sira rona istória ho ita-nia lian.<br><br>
+        Hakarak estende ba lian seluk iha nasaun dezenvolve liu husi Tetum. Se bele ajuda tradusaun ka grava audiolivru, ka iha hanoin, favór kontaktu. Espera aplikasaun ne'e bele ajuda labarik sira iha mundu tomak.<br><br>
+        Sei la iha anúnsiu ka obrigasaun selu, uza aplikasaun ne'e ho liberdade. Ita-nia hanoin importante atu hadia aplikasaun ne'e!
+        `,
+        privacy: "./policy.html?lang=tet",
+        privacyText: "Politika Privasidade"
+      }
+    };
+
+    // 언어 전환 함수
+    function setLang(lang) {
+      const c = contents[lang];
+      document.documentElement.lang = lang;
+      document.getElementById('app-desc').textContent = c.appDesc;
+      document.getElementById('feature1-title').textContent = c.feature1[0];
+      document.getElementById('feature1-desc').textContent = c.feature1[1];
+      document.getElementById('feature2-title').textContent = c.feature2[0];
+      document.getElementById('feature2-desc').textContent = c.feature2[1];
+      document.getElementById('feature3-title').textContent = c.feature3[0];
+      document.getElementById('feature3-desc').textContent = c.feature3[1];
+      document.getElementById('about-title').textContent = c.aboutTitle;
+      document.getElementById('about-content').innerHTML = c.aboutContent;
+      document.getElementById('footer-privacy-link').href = c.privacy;
+      document.getElementById('footer-privacy-link').textContent = c.privacyText;
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+      });
+    }
+
+    // 언어 버튼 이벤트
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => setLang(btn.dataset.lang));
+    });
+
+    // 쿼리스트링으로 언어 선택 지원 (예: ?lang=en)
+    function getQueryLang() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('lang');
+    }
+    const urlLang = getQueryLang();
+    setLang(urlLang && ['ko','en','pt','tet'].includes(urlLang) ? urlLang : 'ko');
+  </script>
+</body>
+</html>
