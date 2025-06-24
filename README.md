@@ -1,0 +1,1 @@
+![앱 소개](images/app-intro.png)
